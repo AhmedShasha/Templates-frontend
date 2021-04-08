@@ -1,0 +1,524 @@
+/* Start Global */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+ul {
+    padding: 0px;
+    list-style: none;
+    margin: 0px;
+}
+
+.navbar,
+.header,
+.section,
+.testim,
+.proj,
+.footer {
+    min-width: 1200px;
+}
+
+
+/* End Global */
+
+
+/* Start Navbar */
+
+.navbar {
+    font-size: 18px;
+    color: white;
+    height: 0px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.navbar .brand {
+    float: left;
+    width: 50%;
+    text-transform: uppercase;
+    margin-top: 7px;
+}
+
+.navbar .links {
+    float: left;
+    width: 50%;
+    margin-top: 33px;
+}
+
+.navbar .links li {
+    display: inline-block;
+    /*padding: 7px 0px;*/
+    margin-right: 25px;
+    text-transform: capitalize;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar .links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .links li.active a,
+.navbar .links li:hover {
+    color: #1abc9c;
+    cursor: pointer;
+}
+
+.navbar .links li.active a,
+.navbar .links li a:hover {
+    color: #1abc9c;
+    border-bottom: 2px solid #1abc9c;
+    cursor: pointer;
+}
+
+
+/* End Navbar */
+
+
+/* stard header */
+
+.header {
+    background: url("../images/header1.jpg");
+    background-repeat: no-repeat;
+    background-size: 1440px 975px;
+    height: 600px;
+    position: relative;
+}
+
+.header .overlay {
+    background-color: rgba(0, 0, 0, 0.527);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    z-index: 1;
+}
+
+.header .bx-wrapper {
+    height: 100% !important;
+    background: none ! important;
+    border: none;
+}
+
+.header .bx-wrapper .bx-viewport {
+    box-shadow: none;
+    border: 0;
+    background: none ! important;
+    height: 100% !important;
+    text-align: center;
+}
+
+.header .bxslider {
+    height: 100%;
+}
+
+.header .bxslider li {
+    display: block;
+    height: 100px;
+}
+
+.header .bxslider li h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.header .bxslider li h2 span {
+    color: #1abc9c;
+}
+
+
+/* End header */
+
+
+/* Start Article */
+
+.section {
+    width: 95%;
+    padding: 64px 20px;
+    margin: 40px auto;
+}
+
+.section .ser {
+    height: 550px;
+    padding: 0px 20px;
+    padding-bottom: 10px;
+}
+
+.section .ser h2,
+.team h2 {
+    font-size: 30px;
+    margin: 0 0;
+    font-weight: normal;
+    padding-bottom: 30px;
+}
+
+.section .item {
+    float: left;
+    width: 33.333333%;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.ser .item i {
+    color: #1abc9c;
+    float: left;
+    width: 25%;
+    margin-right: 5%;
+    margin-top: 7px;
+}
+
+.ser .item .info {
+    float: left;
+    width: 68%;
+}
+
+.section p {
+    text-align: left;
+    color: gray;
+    margin-top: 0;
+}
+
+.item .info h3 {
+    font-weight: normal;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.team {
+    padding: 40px 20px;
+}
+
+.team h2 {
+    font-weight: normal;
+}
+
+.team .box {
+    float: left;
+}
+
+.team .box:first-child {
+    width: 30%;
+}
+
+.team .box:not(:first-child) {
+    width: 16.5%;
+    margin-left: 1%;
+    position: relative;
+    transition: all is ease-in-out;
+}
+
+.team .box:not(:first-child) .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    line-height: 183px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #1abc9cd3;
+    display: none;
+}
+
+.team .box:not(:first-child):hover .overlay {
+    display: block;
+}
+
+.team .box:not(:first-child) img {
+    width: 100%;
+}
+
+.team .box p {
+    color: gray;
+    line-height: 1.3;
+    font-size: 17px;
+}
+
+.testim {
+    background: url('../images/header.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.testim .t-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.testim h2 {
+    font-size: 35px;
+    margin: 80px 0 10px;
+}
+
+.testim q {
+    font-size: 20px;
+    line-height: 1.5;
+    color: rgba(238, 238, 238, 0.87);
+    display: block;
+    margin-top: 60px;
+}
+
+.testim p {
+    font-size: 25px;
+    color: #1abc9c;
+}
+
+.testim .container {
+    width: 680px;
+}
+
+.testim .slid>div {
+    display: none;
+}
+
+.testim .slid .active {
+    display: block;
+}
+
+.proj {
+    padding: 60px 30px;
+}
+
+.proj h2 {
+    font-weight: normal;
+}
+
+.proj ul {
+    margin-top: 50px;
+}
+
+.proj ul li {
+    display: inline;
+    border: 1px solid #8e8e8e;
+    color: #8e8e8e;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.proj ul li.selected {
+    background-color: #1abc9c;
+    border: 1px solid #1abc9c;
+    color: white;
+}
+
+.proj .galary {
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.proj .galary .row>div:nth-child(2) {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.proj .galary .row>div {
+    width: 32.666666%;
+    float: left;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.proj .galary .row>div .over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    line-height: 250px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #1abc9cd3;
+    display: none;
+}
+
+.proj .galary .row>div:hover .over,
+.proj .galary .row>div:hover .heart {
+    display: block;
+}
+
+.proj .galary .row>div .heart {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    display: none;
+}
+
+.proj .galary .row>div img {
+    width: 100%;
+}
+
+.galary .row .mix {
+    display: none;
+}
+
+
+/* End Article */
+
+
+/* start footer */
+
+.footer {
+    color: #6c6c6c;
+    background-color: #232323;
+    padding: 40px 0;
+    overflow: hidden;
+    /* height: 600px; */
+}
+
+.footer .col {
+    float: left;
+    width: 25%;
+}
+
+.footer .col h2 {
+    color: #fff;
+    font-weight: normal;
+    font-size: 19px;
+}
+
+.footer .col p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.footer .icons i {
+    display: inline-block;
+    color: #ccc;
+    padding: 10px;
+    border: 1px solid #979797;
+    width: 40px;
+    cursor: pointer;
+}
+
+.footer .icons i:hover {
+    background-color: #1abc9c;
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #979797;
+    width: 40px;
+    cursor: pointer;
+}
+
+.footer .copyR {
+    /* margin-top: 5px; */
+    width: 25%;
+}
+
+.footer .tags span {
+    display: inline-block;
+    color: #ccc;
+    padding: 10px;
+    border: 1px solid #979797;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.footer .tags span:hover {
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #979797;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    background-color: #1abc9c;
+}
+
+.footer .post>div {
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.footer .post>div h4 {
+    margin: 8px 0;
+    color: #ccc;
+    font-weight: normal;
+}
+
+.footer .post>div img {
+    float: left;
+    margin-right: 10px;
+}
+
+.footer .blog ul li {
+    padding: 10px;
+    border-bottom: 1px solid #979797;
+    color: #ccc;
+}
+
+
+/* End footer */
+
+
+/* Start My Framework */
+
+.clearfix {
+    clear: both;
+}
+
+.active {
+    color: #1abc9c;
+}
+
+.special-heading:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 1px;
+    width: 46px;
+    border-bottom: 3px solid #333;
+}
+
+.special-heading {
+    position: relative;
+}
+
+.separator {
+    border: 2px solid grey;
+    display: block;
+    margin: 40px 0;
+}
+
+
+/* End My Framework */
